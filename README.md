@@ -7,7 +7,7 @@
 This repository contains the complete solution for **DBMS Lab Assignment – 1**.  
 The objective of this assignment is to understand and implement fundamental **SQL concepts**, including database creation, table manipulation, and data operations using **DDL (Data Definition Language)** and **DML (Data Manipulation Language)** commands.
 
-All SQL queries are written manually in a `.sql` file as per the lab submission guidelines.
+
 
 ---
 
@@ -64,12 +64,7 @@ All SQL queries are written manually in a `.sql` file as per the lab submission 
 
 ---
 
-## ✅ Submission Guidelines Followed
-- ✔ SQL code written manually (not auto-generated)
-- ✔ Proper `.sql` file used for submission
-- ✔ Clear comments and question numbering included
-- ✔ README file added for documentation
-- ✔ Lab questions uploaded for reference
+
 
 ---
 
