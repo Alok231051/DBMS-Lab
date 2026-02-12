@@ -1,70 +1,160 @@
-# DBMS Lab Assignment – 1  
-(SQL DDL and DML Commands)
+# 📘 LAB-3: Data Collection & Data Insertion
+## College Database Project
+
+### 🎓 College:
+B.P. Mandal College of Engineering, Madhepura, Bihar
 
 ---
 
-## 📌 Overview
-This repository contains the complete solution for **DBMS Lab Assignment – 1**.  
-The objective of this assignment is to understand and implement fundamental **SQL concepts**, including database creation, table manipulation, and data operations using **DDL (Data Definition Language)** and **DML (Data Manipulation Language)** commands.
+## 📌 Objective
+To understand real-world data collection and perform data insertion in a relational database using SQL.
+
+This lab is based on the schema designed in LAB-2 (ER Diagram & Relational Tables).
+
+---
+
+## 🗂 Database Tables Used
+
+1. Department
+2. Faculty
+3. Course
+4. Student
+5. Enrollment
+
+---
+
+## 🏢 Department Table
+
+Stores academic departments of the college.
+
+| Column Name      | Data Type |
+|------------------|----------|
+| DEPARTMENT_ID    | NUMBER   |
+| DEPARTMENT_NAME  | VARCHAR2 |
+| OFFICE_LOCATION  | VARCHAR2 |
+
+Departments Included:
+- Computer Science Engineering
+- Civil Engineering
+- CSE (AI & ML)
+- Civil Engineering with Computer Application
+- Electrical and Electronics Engineering
+
+---
+
+## 👨‍🏫 Faculty Table
+
+Stores faculty information.
+
+| Column Name     | Data Type |
+|----------------|----------|
+| FACULTY_ID     | NUMBER   |
+| NAME           | VARCHAR2 |
+| DESIGNATION    | VARCHAR2 |
+| EMAIL          | VARCHAR2 |
+| DEPARTMENT_ID  | NUMBER   |
+
+✔ Primary Key: FACULTY_ID  
+✔ Foreign Key: DEPARTMENT_ID references Department
+
+---
+
+## 📘 Course Table
+
+Stores course details offered by departments.
+
+| Column Name     | Data Type |
+|----------------|----------|
+| COURSE_ID      | NUMBER   |
+| COURSE_NAME    | VARCHAR2 |
+| CREDITS        | NUMBER   |
+| DEPARTMENT_ID  | NUMBER   |
+| FACULTY_ID     | NUMBER   |
+
+✔ Foreign Keys:
+- DEPARTMENT_ID → Department
+- FACULTY_ID → Faculty
+
+---
+
+## 👨‍🎓 Student Table
+
+Stores student information.
+
+| Column Name     | Data Type |
+|----------------|----------|
+| STUDENT_ID     | NUMBER   |
+| NAME           | VARCHAR2 |
+| DATE_OF_BIRTH  | DATE     |
+| GENDER         | VARCHAR2 |
+| CONTACT_NUMBER | VARCHAR2 |
+| DEPARTMENT_ID  | NUMBER   |
+
+⚠ Dummy contact numbers used as per lab instruction.
+
+---
+
+## 📝 Enrollment Table
+
+Represents many-to-many relationship between Student and Course.
+
+| Column Name     | Data Type |
+|----------------|----------|
+| ENROLLMENT_ID  | NUMBER   |
+| STUDENT_ID     | NUMBER   |
+| COURSE_ID      | NUMBER   |
+| SEMESTER       | VARCHAR2 |
+| GRADE          | VARCHAR2 |
+
+✔ Semester Used: 5th Semester  
+✔ Grades Assigned: A, B+, A+, etc.
+
+---
+
+## 🔄 Data Inserted
+
+- 5 Departments
+- 16 Faculty Members
+- 10 Courses
+- 10 Students
+- 10 Enrollment Records
+
+All foreign key constraints are satisfied.
+
+---
+
+## 🔍 Verification Queries Used
+
+```sql
+SELECT * FROM Department;
+SELECT * FROM Faculty;
+SELECT * FROM Course;
+SELECT * FROM Student;
+SELECT * FROM Enrollment;
+```
+
+---
+## 📚 Data Source
+
+- Official College Website
+
+- Department Faculty List
+
+- Academic Structure
+
+- Class Timetable
 
 
 
 ---
-
-## 🎯 Objectives of the Assignment
-- To understand the structure of a relational database  
-- To learn how to create and modify database tables  
-- To perform data insertion, retrieval, update, and deletion  
-- To practice writing clean and well-documented SQL queries  
-
 ---
+## 🧪 Tools Used
 
-## 🧾 Assignment Description
+- Oracle Database (SQL*Plus / SQL Developer)
 
-### 🔹 Part A: DDL (Data Definition Language)
-- Creation of database
-- Creation of tables
-- Altering table structure
-- Renaming columns
-- Dropping tables
+- VS Code
 
-### 🔹 Part B: DML (Data Manipulation Language)
-- Inserting records
-- Retrieving data using SELECT queries
-- Updating records
-- Deleting records
-
----
-
-## 📂 Files Included
-- lab1_solution.sql  → Contains all SQL commands with comments & question numbers
-- DB-Lab-1.pdf       → Question paper provided for the lab assignment
-- README.md          → Detailed explanation of the assignment
-  
----
-
-## ▶️ How to Execute the SQL File
-1. Open **Oracle SQL Developer / MySQL / any SQL-supported DB tool**
-2. Create a new database connection
-3. Open the file `lab1_solution.sql`
-4. Execute the queries:
-   - Either **step by step**, or
-   - **All at once**, depending on the DB tool
-5. Verify the output after each query execution
-
----
-
-## 📝 Important Notes
-- Database name used in this assignment: **CollegeDB**
-- SQL queries are written using **standard SQL syntax**
-- Each query is clearly labeled with the **corresponding question number**
-- Proper comments are added for clarity and understanding
-- The assignment follows all lab submission guidelines strictly
-
----
-
-
-
+- GitHub
 ---
 
 ## 👤 Student Details
