@@ -113,8 +113,10 @@ Concepts Covered:
 ## ▶ How to Run
 
 ```sql
--- Run in SQL*Plus
-@db_lab_4.sql
+1. Open **Oracle SQL Plus**
+2. Connect to your Oracle Database
+3. Open the SQL file
+4. Execute the command
 
 ```
 ---
