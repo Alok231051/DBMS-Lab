@@ -1,79 +1,48 @@
-# DBMS Lab Assignment – 1  
-(SQL DDL and DML Commands)
+# 📘 DB-Lab-5: INNER JOIN Operations
 
----
+![SQL](https://img.shields.io/badge/SQL-INNER%20JOIN-blue)
+![Oracle](https://img.shields.io/badge/Database-Oracle-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## 📌 Overview
-This repository contains the complete solution for **DBMS Lab Assignment – 1**.  
-The objective of this assignment is to understand and implement fundamental **SQL concepts**, including database creation, table manipulation, and data operations using **DDL (Data Definition Language)** and **DML (Data Manipulation Language)** commands.
+## 🎯 Objective
+To retrieve meaningful data from multiple related tables using **INNER JOIN**, primary–foreign key relationships, aliases, filtering, sorting, and aggregation without modifying table structure.
 
+## 🗂 Tables Used
+- Student
+- Enrollment
+- Course
+- Faculty
+- Department
 
+## 🧠 Concepts Covered
+INNER JOIN • Multi-table JOIN • Aliases • WHERE • ORDER BY • GROUP BY • COUNT() • MAX()
 
----
+## 📌 Parts Covered
+**Part A:** Student–Enrollment  
+**Part B:** Course–Faculty  
+**Part C:** Student–Course–Enrollment  
+**Part D:** Department-Based JOIN  
+**Part E:** Filtering & Sorting  
+**Part F:** Analytical Queries  
 
-## 🎯 Objectives of the Assignment
-- To understand the structure of a relational database  
-- To learn how to create and modify database tables  
-- To perform data insertion, retrieval, update, and deletion  
-- To practice writing clean and well-documented SQL queries  
+## ▶ How to Run
+1. Create `DB-Lab-5.sql`
+2. Paste all queries
+3. Run using SQL*Plus / Oracle SQL Developer / VS Code SQL Extension
 
----
+## 📂 Structure
+ DB-Lab-5/
+├── DB-Lab-5.sql
+└── README.md
 
-## 🧾 Assignment Description
-
-### 🔹 Part A: DDL (Data Definition Language)
-- Creation of database
-- Creation of tables
-- Altering table structure
-- Renaming columns
-- Dropping tables
-
-### 🔹 Part B: DML (Data Manipulation Language)
-- Inserting records
-- Retrieving data using SELECT queries
-- Updating records
-- Deleting records
-
----
-
-## 📂 Files Included
-- lab1_solution.sql  → Contains all SQL commands with comments & question numbers
-- DB-Lab-1.pdf       → Question paper provided for the lab assignment
-- README.md          → Detailed explanation of the assignment
-  
----
-
-## ▶️ How to Execute the SQL File
-1. Open **Oracle SQL Developer / MySQL / any SQL-supported DB tool**
-2. Create a new database connection
-3. Open the file `lab1_solution.sql`
-4. Execute the queries:
-   - Either **step by step**, or
-   - **All at once**, depending on the DB tool
-5. Verify the output after each query execution
-
----
-
-## 📝 Important Notes
-- Database name used in this assignment: **CollegeDB**
-- SQL queries are written using **standard SQL syntax**
-- Each query is clearly labeled with the **corresponding question number**
-- Proper comments are added for clarity and understanding
-- The assignment follows all lab submission guidelines strictly
-
----
+## 👨‍💻 Author
+Alok Kumar  
+CSE | BPMCE 🚀
 
 
 
 ---
 
-## 👤 Student Details
-- **Name:** Alok Kumar  
-- **Roll No:** 23425
-- **Reg. No:** 23105128017
-- **Branch :** CSE 
-- **College:** BPMCE,Madhepura 
-- **Session:** 2023–2027  
 
 ---
 
