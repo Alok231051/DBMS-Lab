@@ -1,56 +1,95 @@
-# DBMS Lab Assignment – 1  
-(SQL DDL and DML Commands)
+# 📘 DBMS Lab Assignments (Oracle SQL)
+
+![Oracle](https://img.shields.io/badge/Database-Oracle%2021c-red)
+![SQL](https://img.shields.io/badge/Language-SQL-blue)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-## 📌 Overview
-This repository contains the complete solution for **DBMS Lab Assignment – 1**.  
-The objective of this assignment is to understand and implement fundamental **SQL concepts**, including database creation, table manipulation, and data operations using **DDL (Data Definition Language)** and **DML (Data Manipulation Language)** commands.
+## 🎯 Objective
 
+To understand and implement fundamental DBMS concepts using Oracle SQL including:
 
-
----
-
-## 🎯 Objectives of the Assignment
-- To understand the structure of a relational database  
-- To learn how to create and modify database tables  
-- To perform data insertion, retrieval, update, and deletion  
-- To practice writing clean and well-documented SQL queries  
+- Database Design
+- ER Modeling
+- Data Insertion
+- Data Retrieval
+- JOIN Operations
+- GROUP BY & HAVING
 
 ---
 
-## 🧾 Assignment Description
+## 📚 Labs Included
 
-### 🔹 Part A: DDL (Data Definition Language)
-- Creation of database
-- Creation of tables
-- Altering table structure
-- Renaming columns
-- Dropping tables
+### 🔹 DB-Lab-1
+DDL & DML Commands
 
-### 🔹 Part B: DML (Data Manipulation Language)
-- Inserting records
-- Retrieving data using SELECT queries
-- Updating records
-- Deleting records
+### 🔹 DB-Lab-2
+ER Diagram & Relational Schema
+
+### 🔹 DB-Lab-3
+Data Collection & Data Insertion
+
+### 🔹 DB-Lab-4
+Data Retrieval Using SQL
+
+### 🔹 DB-Lab-5
+INNER JOIN Operations
+
+### 🔹 DB-Lab-6
+GROUP BY & HAVING
 
 ---
 
-## 📂 Files Included
-- lab1_solution.sql  → Contains all SQL commands with comments & question numbers
-- DB-Lab-1.pdf       → Question paper provided for the lab assignment
-- README.md          → Detailed explanation of the assignment
-  
+## 🛠️ Tools & Technologies
+
+* Oracle 21c Express Edition
+* SQL*Plus / VS Code
+* Oracle SQL
+* Git & GitHub
+
 ---
 
-## ▶️ How to Execute the SQL File
-1. Open **Oracle SQL Developer / MySQL / any SQL-supported DB tool**
-2. Create a new database connection
-3. Open the file `lab1_solution.sql`
-4. Execute the queries:
-   - Either **step by step**, or
-   - **All at once**, depending on the DB tool
-5. Verify the output after each query execution
+## 📂 Database Tables
+
+* Student
+* Faculty
+* Course
+* Department
+* Enrollment
+
+---
+
+## 📌 Concepts Covered
+
+* DDL & DML Commands
+* ER Diagram
+* Relational Schema
+* Data Insertion
+* SELECT Queries
+* INNER JOIN
+* Aggregate Functions
+* GROUP BY
+* HAVING Clause
+
+---
+
+## ▶️ How to Run
+
+1. Open **SQL*Plus** or **Oracle SQL Developer**
+2. Connect to Oracle Database
+3. Open SQL files
+4. Run:
+
+```sql
+@lab1.sql
+@lab2.sql
+@lab3.sql
+@lab4.sql
+@lab5.sql
+@lab6.sql
+  ```
+
 
 ---
 
@@ -62,7 +101,14 @@ The objective of this assignment is to understand and implement fundamental **SQ
 - The assignment follows all lab submission guidelines strictly
 
 ---
+## 🎓 Learning Outcome
 
+**After completing these labs, you will be able to:**
+- Design relational databases
+- Write SQL queries efficiently
+- Perform JOIN operations
+- Analyze data using aggregate functions
+- Work with Oracle SQL tools
 
 
 ---
